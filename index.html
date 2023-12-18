@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <label for="age">Age</label> <input type="text" id="age" placeholder="30"> <br>
+        <br>
+        <label>Gender</label> <br>
+        <label for="male">Male</label><input type="radio" id="male" name="gender">
+        <label for="female">Female</label><input type="radio" id="female" name="gender"> <br>
+        <br>
+        <label for="height">Height (cm)</label> <input type="text" id="height" placeholder="180"> <br>
+        <br>
+        <label for="weight">Weight (kg)</label> <input type="text" id="weight" placeholder="60"> <br>
+        <br>
+
+        <label for="Active">Activity</label>
+        <select id="select">
+            <option value="bmr">BMR</option>
+            <option value="Not Active" id="no">Not Active</option>
+            <option value="Little Active" id="little">Little Active</option>
+            <option value="Medium Active" id="medium">Medium Active</option>
+            <option value="Very Active" id="very">Very Active</option>
+            <option value="Intensive Active" id="extra">Intensive</option>
+        </select>
+     
+        <br><br><br>
+        <button onclick="goOn(event)">Calculate</button>
+        <div id="demo"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
